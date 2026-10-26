@@ -11,6 +11,22 @@
 <meta property="og:image" content="https://arc1108w-collab.github.io/portfolio/img/og.jpg">
 <meta property="og:url" content="https://arc1108w-collab.github.io/portfolio/">
 <meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://arc1108w-collab.github.io/portfolio/">
+<meta name="theme-color" content="#0D1624">
+<meta name="twitter:title" content="浅見亮太郎のスポーツ戦略室｜無料アスリートキャリア診断">
+<meta name="twitter:description" content="3分でわかる、アスリートの市場価値とキャリアタイプ。現役ラグビー選手×研究者×起業家・浅見亮太郎が監修。">
+<meta name="twitter:image" content="https://arc1108w-collab.github.io/portfolio/img/og.jpg">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"Person","@id":"https://arc1108w-collab.github.io/portfolio/#person","name":"浅見亮太郎","alternateName":"Ryotaro Asami","jobTitle":"合同会社A.R.C. 代表","description":"現役ラグビー選手（リーグワン）、筑波大学大学院（運動栄養学）、複数社の経営者。アスリートの市場価値とキャリア設計、チームビルディングを手がける。","alumniOf":[{"@type":"CollegeOrUniversity","name":"筑波大学"}],"worksFor":{"@type":"Organization","name":"合同会社A.R.C.","url":"https://arccompany.net/"},"url":"https://arc1108w-collab.github.io/portfolio/","image":"https://arc1108w-collab.github.io/portfolio/img/portrait.jpg","sameAs":["https://note.com/light_dietes4655","https://www.youtube.com/@asamiryotaro","https://www.instagram.com/asamiryotaro/","https://www.threads.com/@asamiryotaro","https://www.facebook.com/profile.php?id=61566730471526","https://www.linkedin.com/in/%E4%BA%AE%E5%A4%AA%E9%83%8E-%E6%B5%85%E8%A6%8B-29a0403ba/"]},
+{"@type":"WebSite","name":"浅見亮太郎のスポーツ戦略室","url":"https://arc1108w-collab.github.io/portfolio/","inLanguage":"ja"},
+{"@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"キャリア診断は本当に無料ですか？","acceptedAnswer":{"@type":"Answer","text":"はい、完全無料です。診断後に費用を請求したり、しつこい営業をしたりすることはありません。"}},
+{"@type":"Question","name":"現役の学生でも、引退した選手でも使えますか？","acceptedAnswer":{"@type":"Answer","text":"使えます。最初に「体育学生・現役学生」か「セカンドキャリア」を選ぶと、それぞれに合った質問に切り替わります。"}},
+{"@type":"Question","name":"診断のあと、どう相談すればいいですか？","acceptedAnswer":{"@type":"Answer","text":"結果画面の「結果をLINEで送って相談する」を押すと、回答内容が公式LINEに届きます。浅見本人が内容を見て、次の一歩をお返事します。"}},
+{"@type":"Question","name":"チームや部活単位での相談もできますか？","acceptedAnswer":{"@type":"Answer","text":"できます。ATHLETE BRIDGEでは、選手のキャリア支援とチームへの物資還元をセットで行っています。"}}
+]}]}
+</script>
 <link rel="icon" href="img/icon.png">
 <link rel="apple-touch-icon" href="img/icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -161,6 +177,12 @@ footer nav{display:flex;flex-wrap:wrap;gap:8px 24px;font-size:14px}
 .privacy{max-width:860px;color:var(--muted);font-size:13px}
 .privacy summary{cursor:pointer;color:var(--sub);min-height:44px;display:flex;align-items:center}
 section[id],#d-res{scroll-margin-top:90px}
+.mcta{position:fixed;left:12px;right:12px;bottom:12px;z-index:30;display:none;align-items:center;justify-content:center;gap:8px;padding:14px 18px;border-radius:999px;background:var(--gold);color:var(--navy)!important;font-weight:700;text-decoration:none;box-shadow:0 8px 24px rgba(0,0,0,.35);transform:translateY(140%);transition:transform .3s}
+.mcta.on{transform:none}
+@media (max-width:760px){.mcta{display:flex}footer{padding-bottom:70px}}
+.share{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.share a,.share button{flex:1 1 120px;text-align:center;padding:10px 12px;border-radius:999px;border:1px solid var(--line);background:transparent;color:var(--sub);font:inherit;font-size:14px;text-decoration:none;cursor:pointer}
+.share a:hover,.share button:hover{border-color:var(--gold);color:var(--gold)}
 </style>
 </head>
 <body>
@@ -437,6 +459,7 @@ section[id],#d-res{scroll-margin-top:90px}
 
 </main>
 
+<a class="mcta" id="mcta" href="#diagnosis">無料キャリア診断（3分）を始める →</a>
 <footer>
 <div class="wrap">
 <div style="display:flex;align-items:center;gap:14px"><img src="img/logo.png" alt="A.R.C." style="height:28px;width:auto"><p style="margin:0;color:var(--muted);font-size:13px">© 合同会社A.R.C.</p></div>
@@ -445,6 +468,7 @@ section[id],#d-res{scroll-margin-top:90px}
 <a href="https://note.com/light_dietes4655">note</a>
 <a href="https://www.youtube.com/@asamiryotaro">YouTube</a>
 <a href="https://www.instagram.com/asamiryotaro/">Instagram</a>
+<a href="https://www.threads.com/@asamiryotaro">Threads</a>
 <a href="https://www.facebook.com/profile.php?id=61566730471526">Facebook</a>
 <a href="https://line.me/R/ti/p/@054tfofs">LINE</a>
 </nav>
@@ -497,6 +521,10 @@ const TYPES={
 };
 
 const $=id=>document.getElementById(id);
+/* 流入元：?src= / utm_source / 参照元ドメイン */
+const SRC=(()=>{let v='';try{const u=new URLSearchParams(location.search);v=u.get('src')||u.get('utm_source')||'';if(!v&&document.referrer){const h=new URL(document.referrer).hostname;if(h&&h!==location.hostname)v=h.replace(/^www\./,'');}
+try{if(v)sessionStorage.setItem('src',v);else v=sessionStorage.getItem('src')||'';}catch(e){}}catch(e){}return v||'direct';})();
+const PAGE_URL='https://arc1108w-collab.github.io/portfolio/';
 let track=null,idx=0,ans={};
 const qs=()=>Q[track];
 
@@ -507,7 +535,7 @@ document.querySelectorAll('[data-track]').forEach(b=>b.addEventListener('click',
 }));
 $('d-begin').addEventListener('click',()=>{
   if(!track){$('d-start-err').textContent='まずタイプを選んでください。';return;}
-  idx=0;ans={};show('q');renderQ();
+  idx=0;ans={};show('q');renderQ();post('診断開始');
 });
 function show(w){['start','q','contact','load','res'].forEach(k=>$('d-'+k).classList.toggle('hidden',k!==w));}
 function renderQ(){
@@ -602,12 +630,20 @@ function renderResult(){
   h.push('<p>結果をLINEで送ると、浅見本人が内容を見て、あなたに合った次の一歩をお返事します。売り込みは一切しません。</p>');
   h.push('<div class="ctas" style="margin-top:0"><button type="button" class="btn btn-gold" id="d-send">結果をLINEで送って相談する →</button><button type="button" class="btn btn-ghost" id="d-copy">結果をコピー</button></div>');
   h.push('<p class="err" id="d-send-err" style="color:var(--muted)"></p></div>');
+  const st='アスリートキャリア診断で「'+T.name+'」でした。3分でわかる無料診断はこちら';
+  const su=PAGE_URL+'?src=share#diagnosis';
+  h.push('<div class="rbox" style="margin-top:16px"><h4>チームメイトにもシェアする</h4><div class="share">'
+   +'<a target="_blank" rel="noopener" href="https://social-plugins.line.me/lineit/share?url='+encodeURIComponent(PAGE_URL+'?src=share_line#diagnosis')+'">LINEで送る</a>'
+   +'<a target="_blank" rel="noopener" href="https://x.com/intent/post?text='+encodeURIComponent(st)+'&url='+encodeURIComponent(PAGE_URL+'?src=share_x#diagnosis')+'">Xでシェア</a>'
+   +'<a target="_blank" rel="noopener" href="https://www.threads.net/intent/post?text='+encodeURIComponent(st+' '+PAGE_URL+'?src=share_threads#diagnosis')+'">Threadsでシェア</a>'
+   +'<button type="button" id="d-sharecopy">リンクをコピー</button></div></div>');
   h.push('<p style="margin-top:20px"><button type="button" class="linkbtn" id="d-retry">もう一度診断する</button></p>');
   $('d-res').innerHTML=h.join('');
   show('res');
   $('d-res').scrollIntoView({behavior:'smooth',block:'start'});
   $('d-send').addEventListener('click',sendLine);
   $('d-copy').addEventListener('click',()=>{navigator.clipboard&&navigator.clipboard.writeText(buildText()).then(()=>{$('d-send-err').textContent='コピーしました。LINEのトークに貼り付けて送ることもできます。';});});
+  $('d-sharecopy').addEventListener('click',()=>{navigator.clipboard&&navigator.clipboard.writeText(su).then(()=>{$('d-sharecopy').textContent='コピーしました';});});
   $('d-retry').addEventListener('click',()=>{track=null;document.querySelectorAll('[data-track]').forEach(x=>x.setAttribute('aria-pressed','false'));show('start');});
 }
 function buildText(){
@@ -624,8 +660,9 @@ function buildText(){
   return t;
 }
 function post(event){
-  if(!SHEET_ENDPOINT||!lastResult)return;
-  const body=JSON.stringify(Object.assign({event},contact,lastResult));
+  if(!SHEET_ENDPOINT)return;
+  if(!lastResult&&event!=='診断開始')return;
+  const body=JSON.stringify(Object.assign({event,src:SRC},contact,lastResult||{track:track==='student'?'学生':'セカンドキャリア',at:new Date().toLocaleString('ja-JP',{timeZone:'Asia/Tokyo'})}));
   try{
     if(navigator.sendBeacon&&event==='LINE送信'){navigator.sendBeacon(SHEET_ENDPOINT,new Blob([body],{type:'text/plain'}));return;}
     fetch(SHEET_ENDPOINT,{method:'POST',mode:'no-cors',headers:{'Content-Type':'text/plain'},body,keepalive:true}).catch(()=>{});
@@ -636,6 +673,9 @@ function sendLine(){
   post('LINE送信');
   window.location.href='https://line.me/R/oaMessage/'+encodeURIComponent(LINE_ID)+'/?text='+encodeURIComponent(text);
 }
+(()=>{const m=$('mcta'),d=$('diagnosis');if(!m||!d||!('IntersectionObserver' in window))return;let inD=false;
+const io=new IntersectionObserver(es=>{es.forEach(e=>{inD=e.isIntersecting;});m.classList.toggle('on',!inD&&scrollY>500);},{threshold:0});io.observe(d);
+addEventListener('scroll',()=>{m.classList.toggle('on',!inD&&scrollY>500);},{passive:true});})();
 </script>
 </body>
 </html>

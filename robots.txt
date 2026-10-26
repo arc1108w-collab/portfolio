@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://arc1108w-collab.github.io/portfolio/sitemap.xml
