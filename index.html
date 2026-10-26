@@ -23,7 +23,7 @@
 {"@type":"FAQPage","mainEntity":[
 {"@type":"Question","name":"キャリア診断は本当に無料ですか？","acceptedAnswer":{"@type":"Answer","text":"はい、完全無料です。診断後に費用を請求したり、しつこい営業をしたりすることはありません。"}},
 {"@type":"Question","name":"現役の学生でも、引退した選手でも使えますか？","acceptedAnswer":{"@type":"Answer","text":"使えます。最初に「体育学生・現役学生」か「セカンドキャリア」を選ぶと、それぞれに合った質問に切り替わります。"}},
-{"@type":"Question","name":"診断のあと、どう相談すればいいですか？","acceptedAnswer":{"@type":"Answer","text":"結果画面の「結果をLINEで送って相談する」を押すと、回答内容が公式LINEに届きます。浅見本人が内容を見て、次の一歩をお返事します。"}},
+{"@type":"Question","name":"診断のあと、どう相談すればいいですか？","acceptedAnswer":{"@type":"Answer","text":"結果画面の「結果をLINEで送って相談する」を押すと、公式LINEからタイプ別の「次の一歩」がすぐ届きます。回答内容は浅見本人が確認し、「相談」と送っていただければ15分の無料相談をご案内します。"}},
 {"@type":"Question","name":"チームや部活単位での相談もできますか？","acceptedAnswer":{"@type":"Answer","text":"できます。ATHLETE BRIDGEでは、選手のキャリア支援とチームへの物資還元をセットで行っています。"}}
 ]}]}
 </script>
@@ -441,7 +441,7 @@ section[id],#d-res{scroll-margin-top:90px}
 <details><summary>キャリア診断は本当に無料ですか？</summary><p>はい、完全無料です。診断後に費用を請求したり、しつこい営業をしたりすることはありません。</p></details>
 <details><summary>入力した連絡先は何に使われますか？</summary><p>診断結果をもとにしたご連絡と、サービス改善のためにのみ使います。第三者に提供することはありません。ご連絡が不要な場合は、その旨お知らせください。</p></details>
 <details><summary>現役の学生でも、引退した選手でも使えますか？</summary><p>使えます。最初に「体育学生・現役学生」か「セカンドキャリア」を選ぶと、それぞれに合った質問に切り替わります。</p></details>
-<details><summary>診断のあと、どう相談すればいいですか？</summary><p>結果画面の「結果をLINEで送って相談する」を押すと、回答内容が公式LINEに届きます。浅見本人が内容を見て、次の一歩をお返事します。</p></details>
+<details><summary>診断のあと、どう相談すればいいですか？</summary><p>結果画面の「結果をLINEで送って相談する」を押すと、公式LINEからタイプ別の「次の一歩」がすぐ届きます。回答内容は浅見本人が確認し、「相談」と送っていただければ15分の無料相談をご案内します。</p></details>
 <details><summary>チームや部活単位での相談もできますか？</summary><p>できます。ATHLETE BRIDGEでは、選手のキャリア支援とチームへの物資還元をセットで行っています。監督・コーチの方は「監督・コーチの方はこちら」からご連絡ください。</p></details>
 <details><summary>講演や取材の依頼はどこからできますか？</summary><p>公式LINEで「依頼」と送るか、メール（a.r.c.1108w@gmail.com）でご連絡ください。</p></details>
 </div>
@@ -627,7 +627,7 @@ function renderResult(){
   h.push('<div class="rbox" style="margin-top:16px"><h4>向いている仕事</h4><div class="jobs">'+T.jobs.map(j=>'<div class="job"><div><b>'+esc(j[0])+'</b><small>'+esc(j[1])+'</small></div><span class="stars" aria-label="適合度'+j[2]+'">'+stars(j[2])+'</span></div>').join('')+'</div></div>');
   h.push('<div class="rbox" style="margin-top:16px"><h4>知っておきたいリスク</h4><ul>'+T.risk.map(x=>'<li>'+esc(x)+'</li>').join('')+'</ul></div>');
   h.push('<div class="cta-box"><p style="font-family:var(--serif);font-size:20px;color:var(--text);margin-bottom:8px">この結果を、無料相談のたたき台に。</p>');
-  h.push('<p>結果をLINEで送ると、浅見本人が内容を見て、あなたに合った次の一歩をお返事します。売り込みは一切しません。</p>');
+  h.push('<p>結果をLINEで送ると、あなたのタイプに合わせた「次の一歩」がすぐ届きます。回答内容は浅見本人も確認し、必要に応じて個別にお返事します。売り込みは一切しません。</p>');
   h.push('<div class="ctas" style="margin-top:0"><button type="button" class="btn btn-gold" id="d-send">結果をLINEで送って相談する →</button><button type="button" class="btn btn-ghost" id="d-copy">結果をコピー</button></div>');
   h.push('<p class="err" id="d-send-err" style="color:var(--muted)"></p></div>');
   const st='アスリートキャリア診断で「'+T.name+'」でした。3分でわかる無料診断はこちら';
@@ -669,7 +669,8 @@ function post(event){
   }catch(e){}
 }
 function sendLine(){
-  const text=buildText();
+  /* 公式LINEのキーワード応答に合わせ、タイプ名だけを送る（回答の詳細はシートとメールに届く） */
+  const text='診断結果：'+lastResult.type;
   post('LINE送信');
   window.location.href='https://line.me/R/oaMessage/'+encodeURIComponent(LINE_ID)+'/?text='+encodeURIComponent(text);
 }
