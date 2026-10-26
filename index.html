@@ -1,0 +1,592 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>浅見亮太郎のスポーツ戦略室｜現役のうちに、自分の価値を設計する。</title>
+<meta name="description" content="現役ラグビー選手×研究者×起業家・浅見亮太郎の公式ページ。アスリートの市場価値がわかる無料キャリア診断、事業紹介、講演・相談のご依頼。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@600;700&display=swap">
+<style>
+:root{
+  --navy:#0D1624;--navy2:#132032;--navy3:#101B2C;--line:#2A3547;
+  --gold:#C9A86A;--gold2:#E3C893;--cream:#F6F2EA;--text:#F6F2EA;--sub:#D9D2C3;--muted:#B8B1A4;
+  --ink:#1A2433;--ink2:#3B4556;--goldDark:#8A6A2E;
+  --serif:'Noto Serif JP',serif;--sans:'Noto Sans JP',system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--navy);color:var(--text);font-family:var(--sans);line-height:1.85;letter-spacing:.02em;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:var(--gold)}a:hover{color:var(--gold2)}
+.wrap{max-width:1200px;margin:0 auto;padding-left:clamp(20px,4vw,48px);padding-right:clamp(20px,4vw,48px)}
+.sec{padding-top:clamp(64px,9vw,128px);padding-bottom:clamp(64px,9vw,128px)}
+.eyebrow{margin:0 0 12px;color:var(--gold);font-size:13px;font-weight:500;letter-spacing:.32em}
+.light .eyebrow{color:var(--goldDark)}
+h1,h2,h3{font-family:var(--serif);font-weight:700;margin:0}
+h2{font-size:clamp(26px,3.4vw,40px);line-height:1.5;margin-bottom:20px}
+.lead{max-width:720px;color:var(--sub);margin:0 0 44px}
+.light{background:var(--cream);color:var(--ink)}
+.light .lead{color:var(--ink2)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 28px;border-radius:999px;text-decoration:none;font-weight:700;font-size:15px;border:1px solid var(--gold);cursor:pointer;font-family:var(--sans)}
+.btn-gold{background:var(--gold);color:var(--navy)}.btn-gold:hover{background:var(--gold2);color:var(--navy)}
+.btn-ghost{background:transparent;color:var(--gold)}.btn-ghost:hover{background:rgba(201,168,106,.1)}
+.btn-dark{background:var(--navy);color:var(--cream);border-color:var(--navy)}.btn-dark:hover{color:var(--cream);opacity:.9}
+.row{display:flex;flex-wrap:wrap;gap:clamp(32px,5vw,72px);align-items:center}
+.grow{flex:999 1 460px;min-width:0}.side{flex:1 1 320px;min-width:0}
+/* header */
+header{position:sticky;top:0;z-index:20;background:rgba(13,22,36,.92);backdrop-filter:blur(8px);border-bottom:1px solid rgba(42,53,71,.6)}
+.hdr{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;padding-top:16px;padding-bottom:16px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--text)}
+.brand img{height:30px;width:auto}
+.brand span{font-family:var(--serif);font-weight:700;font-size:16px;letter-spacing:.08em}
+nav.main{display:flex;flex-wrap:wrap;align-items:center;gap:6px 24px;font-size:14px}
+nav.main a{color:var(--sub);text-decoration:none}nav.main a:hover{color:var(--gold2)}
+nav.main .btn{min-height:42px;padding:0 18px;font-size:13px}
+@media(max-width:760px){nav.main a:not(.btn){display:none}}
+/* hero */
+.hero{padding-top:clamp(40px,6vw,88px);padding-bottom:clamp(56px,8vw,120px)}
+.hero h1{font-size:clamp(36px,5.4vw,68px);line-height:1.35;letter-spacing:.04em}
+.bar{width:72px;height:2px;background:var(--gold);margin:32px 0}
+.hero p.sub{margin:0;max-width:560px;color:var(--sub);font-size:clamp(15px,1.4vw,17px)}
+.ctas{display:flex;flex-wrap:wrap;gap:14px;margin-top:40px}
+.photo-frame{position:relative}
+.photo-frame:before{content:"";position:absolute;inset:24px -20px -20px 24px;border:1px solid var(--gold);opacity:.6}
+.photo-frame img{position:relative;width:100%;aspect-ratio:7/10;object-fit:cover}
+/* facts */
+.facts{background:var(--navy3);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.facts .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:28px;padding-top:36px;padding-bottom:36px}
+.facts .k{margin:0;color:var(--gold);font-size:12px;letter-spacing:.24em}
+.facts .v{margin:6px 0 0;font-family:var(--serif);font-weight:700;font-size:20px}
+/* diagnosis */
+.diag{background:linear-gradient(180deg,var(--navy2),var(--navy));border-top:1px solid var(--line)}
+.dcard{background:var(--navy3);border:1px solid var(--line);border-top:2px solid var(--gold);padding:clamp(24px,4vw,48px);max-width:860px;margin:0 auto}
+.dtracks{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin:24px 0 28px}
+.opt{display:block;width:100%;text-align:left;background:transparent;color:var(--text);border:1px solid var(--line);padding:18px 20px;cursor:pointer;font-family:var(--sans);font-size:15px;line-height:1.6;border-radius:4px;transition:border-color .15s,background .15s}
+.opt:hover{border-color:var(--gold)}
+.opt[aria-pressed="true"]{border-color:var(--gold);background:rgba(201,168,106,.12)}
+.opt b{display:block;font-family:var(--serif);font-size:18px;margin-bottom:4px}
+.opt small{color:var(--muted);font-size:13px}
+.qgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px;margin-top:20px}
+.qgrid .opt{padding:14px 16px}
+.progress{height:3px;background:var(--line);margin-bottom:28px}
+.progress i{display:block;height:100%;background:var(--gold);transition:width .3s}
+.qnum{color:var(--gold);font-size:13px;letter-spacing:.2em;margin:0 0 8px}
+.qtitle{font-family:var(--serif);font-size:clamp(20px,2.4vw,26px);line-height:1.5;margin:0}
+.dnav{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:28px;flex-wrap:wrap}
+.linkbtn{background:none;border:none;color:var(--muted);cursor:pointer;font-size:14px;font-family:var(--sans);min-height:44px;padding:0 4px}
+.linkbtn:hover{color:var(--gold2)}
+textarea,input[type=text],input[type=email],input[type=tel]{width:100%;background:var(--navy);color:var(--text);border:1px solid var(--line);border-radius:4px;padding:14px 16px;font-family:var(--sans);font-size:15px;line-height:1.7}
+textarea{min-height:140px;resize:vertical}
+textarea:focus,input:focus,.opt:focus-visible,.btn:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+label.fl{display:block;color:var(--sub);font-size:14px;margin:18px 0 8px}
+.err{color:#F2B8A0;font-size:14px;margin:14px 0 0;min-height:1em}
+.loading{text-align:center;padding:48px 0}
+.loading p{margin:6px 0;color:var(--sub)}
+.spin{width:44px;height:44px;border:2px solid var(--line);border-top-color:var(--gold);border-radius:50%;margin:0 auto 20px;animation:sp 1s linear infinite}
+@keyframes sp{to{transform:rotate(360deg)}}
+.result .type{font-family:var(--serif);font-size:clamp(28px,3.6vw,40px);margin:4px 0 8px}
+.score{display:flex;align-items:baseline;gap:10px;margin:20px 0 6px}
+.score .n{font-family:var(--serif);font-size:56px;color:var(--gold);line-height:1}
+.score .u{color:var(--muted)}
+.meter{height:6px;background:var(--line);border-radius:3px;overflow:hidden;margin-bottom:6px}
+.meter i{display:block;height:100%;background:var(--gold)}
+.note{color:var(--muted);font-size:12px;margin:0}
+.rgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:28px}
+.rbox{border:1px solid var(--line);padding:20px 22px}
+.rbox h4{margin:0 0 10px;font-size:14px;color:var(--gold);letter-spacing:.12em;font-weight:500}
+.rbox ul{margin:0;padding-left:1.1em}
+.rbox li{margin:2px 0}
+.jobs{display:grid;gap:10px;margin-top:10px}
+.job{display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid var(--line);padding:10px 0}
+.job b{display:block}.job small{color:var(--muted)}
+.stars{color:var(--gold);white-space:nowrap;letter-spacing:.1em}
+.cta-box{margin-top:32px;padding:28px;background:rgba(201,168,106,.08);border:1px solid var(--gold)}
+.cta-box p{margin:0 0 16px;color:var(--sub)}
+.consent{display:flex;gap:10px;align-items:flex-start;font-size:13px;color:var(--muted);margin:0 0 16px}
+.consent input{margin-top:5px;width:18px;height:18px;accent-color:var(--gold)}
+/* cards */
+.cards3{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px}
+.wcard{background:#fff;padding:36px 32px;border:1px solid #E4DCCB}
+.wcard .k{margin:0;color:var(--goldDark);font-size:12px;letter-spacing:.28em}
+.wcard h3{margin:14px 0 12px;font-size:22px}
+.wcard p{margin:0;color:var(--ink2);font-size:15px}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.tile{padding:30px;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+.tile .k{margin:0;color:var(--gold);font-size:13px}
+.tile h3{font-family:var(--sans);margin:10px 0;font-size:18px}
+.tile p{margin:0;color:var(--muted);font-size:14px}
+.os{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin:0 0 48px}
+.os div{border:1px solid var(--line);padding:18px 20px}
+.os b{display:block;font-family:var(--serif);font-size:18px}
+.os span{color:var(--muted);font-size:13px}
+.more{margin-top:36px;color:var(--muted);font-size:14px}
+.more strong{color:var(--sub);font-weight:500}
+.ach{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+.ach div{border-top:1px solid var(--goldDark);padding-top:16px}
+.ach b{display:block;font-family:var(--serif);font-size:22px;color:var(--ink)}
+.ach span{color:var(--ink2);font-size:14px}
+blockquote{margin:36px 0 0;padding:28px 32px;background:var(--navy2);border-top:1px solid var(--gold)}
+blockquote p{margin:0;font-family:var(--serif);font-weight:600;font-size:clamp(18px,2vw,22px);line-height:1.7}
+.notes{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px}
+.notes a{display:block;padding:32px;background:var(--navy2);border:1px solid var(--line);text-decoration:none;color:var(--text)}
+.notes a:hover{border-color:var(--gold)}
+.notes .k{margin:0 0 14px;color:var(--gold);font-size:12px;letter-spacing:.2em}
+.notes .t{margin:0;font-family:var(--serif);font-weight:700;font-size:20px;line-height:1.6}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:24px;padding-top:48px;padding-bottom:48px}
+footer nav{display:flex;flex-wrap:wrap;gap:8px 24px;font-size:14px}
+.hidden{display:none !important}
+section[id],#d-res{scroll-margin-top:90px}
+</style>
+</head>
+<body>
+
+<header>
+<div class="wrap hdr">
+<a class="brand" href="#top"><img src="img/logo.png" alt="A.R.C."><span>浅見亮太郎のスポーツ戦略室</span></a>
+<nav class="main" aria-label="ページ内メニュー">
+<a href="#diagnosis">無料診断</a>
+<a href="#about">プロフィール</a>
+<a href="#business">事業</a>
+<a href="#request">ご依頼</a>
+<a href="#note">note</a>
+<a class="btn btn-gold" href="https://line.me/R/ti/p/@054tfofs">LINEで友だち追加</a>
+</nav>
+</div>
+</header>
+
+<main id="top">
+
+<section class="wrap hero">
+<div class="row">
+<div class="grow">
+<p class="eyebrow">ATHLETE × RESEARCHER × ENTREPRENEUR</p>
+<h1>現役のうちに、<br>自分の価値を<br>設計する。</h1>
+<div class="bar"></div>
+<p class="sub">現役ラグビー選手として競技を続けながら、大学院で運動栄養学を研究し、複数の会社を経営しています。競技・研究・事業の三つの現場から、スポーツ選手の「市場価値」とキャリア設計を考え、発信しています。</p>
+<div class="ctas">
+<a class="btn btn-gold" href="#diagnosis">無料キャリア診断をはじめる <span aria-hidden="true">→</span></a>
+<a class="btn btn-ghost" href="https://line.me/R/ti/p/@054tfofs">LINEで最新記事を受け取る</a>
+</div>
+</div>
+<div class="side"><div class="photo-frame"><img src="img/hero.jpg" alt="夜の階段を降りる浅見亮太郎"></div></div>
+</div>
+</section>
+
+<section class="facts" aria-label="経歴の概要">
+<div class="wrap grid">
+<div><p class="k">SINCE AGE 5</p><p class="v">5歳でラグビーと出会う</p></div>
+<div><p class="k">HIGH SCHOOL</p><p class="v">花園ベスト4</p></div>
+<div><p class="k">NATIONAL TEAM</p><p class="v">U20日本代表</p></div>
+<div><p class="k">RESEARCH</p><p class="v">運動栄養学・骨密度研究</p></div>
+</div>
+</section>
+
+<!-- ===== DIAGNOSIS ===== -->
+<section id="diagnosis" class="diag sec">
+<div class="wrap">
+<div style="text-align:center;max-width:760px;margin:0 auto 40px">
+<p class="eyebrow">ATHLETE CAREER DIAGNOSIS</p>
+<h2>競技の経験が、<br>最強の武器になる。</h2>
+<p class="lead" style="margin:0 auto">アスリートの市場価値を可視化する無料診断。所要3分、スマホで完結。あなたのキャリアタイプと、向いている仕事がわかります。</p>
+</div>
+
+<div class="dcard" aria-live="polite">
+<!-- start -->
+<div id="d-start">
+<p class="qnum">STEP 0</p>
+<p class="qtitle">いまのあなたに近いのは？</p>
+<div class="dtracks">
+<button type="button" class="opt" data-track="student" aria-pressed="false"><b>体育学生・現役学生</b><small>就活・インターン探し中。競技と仕事を両立したい。</small></button>
+<button type="button" class="opt" data-track="second" aria-pressed="false"><b>セカンドキャリア</b><small>引退・引退検討中。競技後の仕事を考えたい。</small></button>
+</div>
+<p class="err" id="d-start-err"></p>
+<button type="button" class="btn btn-gold" id="d-begin">診断スタート <span aria-hidden="true">→</span></button>
+</div>
+
+<!-- questions -->
+<div id="d-q" class="hidden">
+<div class="progress"><i id="d-bar" style="width:0%"></i></div>
+<p class="qnum" id="d-qnum"></p>
+<p class="qtitle" id="d-qtitle"></p>
+<div class="qgrid" id="d-opts"></div>
+<div id="d-free" class="hidden">
+<textarea id="d-text" aria-label="自由記述" placeholder=""></textarea>
+</div>
+<p class="err" id="d-err"></p>
+<div class="dnav">
+<button type="button" class="linkbtn" id="d-back">← 戻る</button>
+<button type="button" class="btn btn-gold" id="d-next">次へ <span aria-hidden="true">→</span></button>
+</div>
+</div>
+
+<!-- contact -->
+<form id="d-contact" class="hidden" novalidate>
+<div class="progress"><i style="width:100%"></i></div>
+<p class="qnum">LAST STEP</p>
+<p class="qtitle">診断結果の受け取り先を教えてください</p>
+<p style="color:var(--muted);font-size:14px;margin:10px 0 0">結果はこの画面に表示されます。あわせて、浅見から個別のアドバイスをお送りする際の連絡先として使います。</p>
+<label class="fl" for="c-name">お名前 <span style="color:var(--gold)">*</span></label>
+<input type="text" id="c-name" autocomplete="name" required>
+<label class="fl" for="c-email">メールアドレス <span style="color:var(--gold)">*</span></label>
+<input type="email" id="c-email" autocomplete="email" inputmode="email" required>
+<label class="fl" for="c-phone">電話番号（任意）</label>
+<input type="tel" id="c-phone" autocomplete="tel" inputmode="tel">
+<label class="fl" for="c-org">学校名・チーム名（任意）</label>
+<input type="text" id="c-org" autocomplete="organization">
+<label class="consent" style="margin-top:20px"><input type="checkbox" id="c-agree"><span>入力内容と診断の回答を、合同会社A.R.C.がキャリア相談のご連絡とサービス改善のために利用することに同意します。第三者に提供することはありません。</span></label>
+<p class="err" id="c-err"></p>
+<div class="dnav">
+<button type="button" class="linkbtn" id="c-back">← 戻る</button>
+<button type="submit" class="btn btn-gold">診断結果を見る ✦</button>
+</div>
+</form>
+
+<!-- loading -->
+<div id="d-load" class="hidden loading">
+<div class="spin" aria-hidden="true"></div>
+<p id="d-loadtext">競技データを分析中…</p>
+</div>
+
+<!-- result -->
+<div id="d-res" class="hidden result"></div>
+</div>
+</div>
+</section>
+
+<!-- ===== PROFILE ===== -->
+<section id="about" class="wrap sec">
+<div class="row" style="align-items:flex-start">
+<div class="side"><img src="img/portrait.jpg" alt="浅見亮太郎のポートレート" style="width:100%;aspect-ratio:4/5;object-fit:cover"></div>
+<div class="grow">
+<p class="eyebrow">PROFILE</p>
+<h2 style="margin-bottom:6px">浅見 亮太郎</h2>
+<p style="margin:0 0 28px;color:var(--muted);font-size:14px;letter-spacing:.12em">Ryotaro Asami</p>
+<p style="color:var(--sub);margin:0 0 20px">神戸出身。5歳でラグビーと出会い、流通経済大学付属柏高校で花園ベスト4。筑波大学では1年から試合に出場し、U20日本代表にも選ばれました。現在もリーグワンの現役選手としてプレーを続けています。</p>
+<p style="color:var(--sub);margin:0 0 20px">筑波大学大学院では運動栄養学を専攻し、ラグビー選手の骨密度と身体負荷を研究。合同会社A.R.C.の代表をはじめ、複数の会社の経営・オーナーを務めています。大学・高校の部活動の指導や、自治体・競技団体と連携した取り組みにも携わっています。</p>
+<blockquote><p>「才能で負けた分を、<br>時間と執着で取り返す。」</p><p style="margin-top:12px;color:var(--muted);font-family:var(--sans);font-weight:400;font-size:13px">― 自分の原点にある言葉</p></blockquote>
+</div>
+</div>
+</section>
+
+<!-- ===== PHILOSOPHY ===== -->
+<section class="light">
+<div class="wrap sec">
+<p class="eyebrow">PHILOSOPHY</p>
+<h2>三兎を追う。<br>どれも、本気で。</h2>
+<p class="lead">「二兎を追う者は一兎をも得ず」と言われます。それでも自分は、競技・研究・事業の三つを同時に追うことを選びました。三つの現場を行き来するからこそ見える景色があり、それがスポーツ選手のキャリアを考えるうえでの強みになると信じています。</p>
+<div class="cards3">
+<div class="wcard"><p class="k">01 ATHLETE</p><h3>現役ラグビー選手</h3><p>勝ち負けの現場に身を置き続けること。言葉に重みを持たせる、一番の根拠です。</p></div>
+<div class="wcard"><p class="k">02 RESEARCHER</p><h3>運動栄養学の研究者</h3><p>感覚を、根拠のある言葉に変える。科学と現場をつなぐ架け橋をつくります。</p></div>
+<div class="wcard"><p class="k">03 ENTREPRENEUR</p><h3>複数社の経営・オーナー</h3><p>スポーツで培った力が、社会でどう通用するか。自分自身で確かめ続けています。</p></div>
+</div>
+</div>
+</section>
+
+<!-- ===== BUSINESS ===== -->
+<section id="business" class="wrap sec">
+<p class="eyebrow">BUSINESS ― A.R.C.</p>
+<h2>構造が、成果を生む。</h2>
+<p class="lead">スポーツの「勝つための仕組み」を社会に広げ、強い組織を当たり前にする。合同会社A.R.C.は、目標設定・実行・改善・戦略を回すスポーツの考え方＝「SPORTS OS」で、人と組織が成果を出せる構造をつくります。</p>
+<div class="os">
+<div><b>Goal</b><span>目標を定める</span></div>
+<div><b>Execution</b><span>やり切る</span></div>
+<div><b>Improvement</b><span>振り返り、磨く</span></div>
+<div><b>Strategy</b><span>勝ち筋を描く</span></div>
+</div>
+<div class="tiles">
+<div class="tile"><p class="k">Sports Branding</p><h3>スポーツブランディング</h3><p>スポンサー営業、営業組織づくり、営業代行。企業版ふるさと納税を活かした選手のスポンサー支援も。</p></div>
+<div class="tile"><p class="k">Sports Talent</p><h3>アスリートのキャリア支援</h3><p>人材育成、キャリア支援、企業とのマッチング。現役のうちから、競技後まで続くキャリアを設計します。</p></div>
+<div class="tile"><p class="k">Sports Real Estate</p><h3>スポーツ×不動産</h3><p>チーム寮・選手の住まい、合宿や施設の確保まで、スポーツに特化した不動産サポート。</p></div>
+<div class="tile"><p class="k">SNS</p><h3>SNS運用</h3><p>SNS戦略、ファンコミュニティづくり、スポーツブランディング。</p></div>
+<div class="tile"><p class="k">Events</p><h3>イベント・スポーツ教室</h3><p>イベントや大会の企画、子ども向けスポーツ教室、地域・自治体と進めるスポーツの取り組み。</p></div>
+<div class="tile"><p class="k">Coaching</p><h3>コーチング・チームビルディング</h3><p>パフォーマンス向上、メンタルコーチング、チームビルディング研修。</p></div>
+</div>
+<p class="more"><strong>グループで手がける事業：</strong>お酒・コーヒー・盆栽の輸出入／モリンガを起点にした農業／ハウスクリーニング ほか。分野はさまざまでも、「スポーツで培った力を、社会のいろんな場所で活かす」という軸は一つです。<br><a href="https://arccompany.net/">合同会社A.R.C. 公式サイトを見る →</a></p>
+</section>
+
+<!-- ===== ACHIEVEMENTS ===== -->
+<section class="light">
+<div class="wrap sec">
+<p class="eyebrow">ACHIEVEMENTS</p>
+<h2>現場で、積み上げてきたこと。</h2>
+<div class="ach" style="margin-top:36px">
+<div><b>100名超</b><span>ラグビー部主将として率いたチームの規模</span></div>
+<div><b>2,000名規模</b><span>運営を統括したイベント</span></div>
+<div><b>1億円超</b><span>スポンサーシップで生み出した資金の循環</span></div>
+<div><b>満足度95%以上</b><span>主催イベントの参加者満足度</span></div>
+<div><b>採用工数80%削減</b><span>3か月で実現した採用支援の成果</span></div>
+<div><b>全国大会・代表</b><span>花園ベスト4、U20日本代表などの競技実績</span></div>
+</div>
+</div>
+</section>
+
+<!-- ===== ATHLETE BRIDGE ===== -->
+<section class="wrap sec">
+<div class="row">
+<div class="grow">
+<p class="eyebrow">FOR TEAMS ― ATHLETE BRIDGE</p>
+<h2>選手の「未来」が、<br>そのままチームの「力」に。</h2>
+<p style="color:var(--sub);margin:0 0 20px">大学部活動が抱える「就活の超早期化」と「慢性的な資金不足」。ATHLETE BRIDGEは、この二つをひとつの仕組みで越えていきます。選手にはスマホで完結するキャリアの伴走を。そして選手が内定を得るたび、その成果をプロテインや備品など“現物”でチームへ還元します。</p>
+<p style="color:var(--sub);margin:0 0 32px">選手もチームも費用は0円。学校の稟議も不要です。</p>
+<div class="ctas" style="margin-top:0">
+<a class="btn btn-gold" href="https://line.me/R/oaMessage/@054tfofs/?text=%E3%80%90ATHLETE%20BRIDGE%E3%80%91%E3%83%81%E3%83%BC%E3%83%A0%E3%81%AE%E7%9B%B8%E8%AB%87%E3%82%92%E3%81%97%E3%81%9F%E3%81%84%E3%81%A7%E3%81%99">監督・コーチの方はこちら（15分の無料相談）</a>
+</div>
+</div>
+<div class="side">
+<div style="border:1px solid var(--line);padding:28px">
+<p class="eyebrow" style="margin-bottom:18px">GROWTH CYCLE</p>
+<p style="margin:0 0 12px"><span style="color:var(--gold);font-family:var(--serif)">01</span>　学生のキャリアを支援</p>
+<p style="margin:0 0 12px"><span style="color:var(--gold);font-family:var(--serif)">02</span>　優良企業へ内定</p>
+<p style="margin:0"><span style="color:var(--gold);font-family:var(--serif)">03</span>　成果をチームへ還元</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ===== REQUEST ===== -->
+<section id="request" style="background:var(--navy3);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+<div class="wrap sec">
+<div class="row">
+<div class="grow">
+<p class="eyebrow">REQUEST</p>
+<h2>ご相談・ご依頼</h2>
+<p style="color:var(--sub);margin:0 0 28px">こんなご相談をお受けしています。LINEで「依頼」と送っていただくと、ご依頼の流れをご案内します。</p>
+<ul style="margin:0 0 36px;padding:0;list-style:none;display:grid;gap:12px">
+<li>― アスリートのキャリア設計・市場価値の棚卸し</li>
+<li>― 講演・セミナー（キャリア、チームづくり、運動栄養）</li>
+<li>― スポーツ教室・イベントの企画</li>
+<li>― 企業・自治体とのスポーツ事業の連携</li>
+<li>― 取材・メディア出演</li>
+</ul>
+<div class="ctas" style="margin-top:0">
+<a class="btn btn-gold" href="https://line.me/R/ti/p/@054tfofs">LINEで相談する <span aria-hidden="true">→</span></a>
+<a class="btn btn-ghost" href="mailto:a.r.c.1108w@gmail.com?subject=%E3%81%94%E7%9B%B8%E8%AB%87%E3%83%BB%E3%81%94%E4%BE%9D%E9%A0%BC">メールで相談する</a>
+</div>
+</div>
+<div class="side"><img src="img/office.jpg" alt="本棚の前に立つ浅見亮太郎" style="width:100%;aspect-ratio:4/3;object-fit:cover"></div>
+</div>
+</div>
+</section>
+
+<!-- ===== NOTE ===== -->
+<section id="note" class="wrap sec">
+<div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:16px;margin-bottom:36px">
+<div><p class="eyebrow">NOTE</p><h2 style="margin:0">毎日、言葉にしています。</h2></div>
+<a href="https://note.com/light_dietes4655">記事一覧を見る →</a>
+</div>
+<div class="notes">
+<a href="https://note.com/light_dietes4655/n/n1dd5c02805a9"><p class="k">#01　まず読んでほしい1本</p><p class="t">現役ラグビー選手で、研究者で、起業家。──なぜ自分は「三兎」を追うのか</p></a>
+<a href="https://note.com/light_dietes4655/n/nd86abb33c559"><p class="k">#02</p><p class="t">現役の自分は、"引退後の値段"を一度も真剣に考えたことがなかった</p></a>
+</div>
+</section>
+
+<section class="light">
+<div class="wrap sec" style="text-align:center;max-width:880px">
+<p class="eyebrow">LINE OFFICIAL</p>
+<h2>浅見亮太郎のスポーツ戦略室</h2>
+<p class="lead" style="margin:0 auto 36px;max-width:560px">noteの最新記事を毎日お届けしています。感想やご相談も、トークからそのまま送ってください。すべて自分で読んでいます。</p>
+<a class="btn btn-dark" href="https://line.me/R/ti/p/@054tfofs">LINEで友だち追加する <span aria-hidden="true">→</span></a>
+</div>
+</section>
+
+</main>
+
+<footer>
+<div class="wrap">
+<div style="display:flex;align-items:center;gap:14px"><img src="img/logo.png" alt="A.R.C." style="height:28px;width:auto"><p style="margin:0;color:var(--muted);font-size:13px">© 合同会社A.R.C.</p></div>
+<nav aria-label="SNS・関連リンク">
+<a href="https://arccompany.net/">A.R.C.公式サイト</a>
+<a href="https://note.com/light_dietes4655">note</a>
+<a href="https://www.youtube.com/@asamiryotaro">YouTube</a>
+<a href="https://www.instagram.com/asamiryotaro/">Instagram</a>
+<a href="https://www.facebook.com/profile.php?id=61566730471526">Facebook</a>
+<a href="https://line.me/R/ti/p/@054tfofs">LINE</a>
+</nav>
+</div>
+</footer>
+
+<script>
+/* ============ 設定 ============
+ * LINE_ID      : 診断結果を送る公式LINE
+ * SHEET_ENDPOINT: Googleスプレッドシート連携用のURL（Apps Scriptのウェブアプリ）。空なら送信しない。
+ */
+const LINE_ID='@054tfofs';
+const SHEET_ENDPOINT='https://script.google.com/macros/s/AKfycbyJdEVS6U63KdnVhqzvNVboMKKfRAHVqTTDalIhBgJJti_k3nP4mZyf7bxiOyCF5ofu/exec';
+
+const SPORTS=['サッカー・フットサル','バスケットボール','ラグビー・アメフト','野球・ソフトボール','テニス・バドミントン','水泳・水球','陸上競技','武道・格闘技','冬季スポーツ','バレーボール','体操・新体操','その他'];
+const YEARS=['3年未満','3〜6年','7〜10年','11〜15年','16年以上'];
+const POWERS=['目標設定・達成力','チームワーク・協調性','コミュニケーション力','分析力・判断力','精神力・メンタル','瞬発力・行動力'];
+const Q={
+ student:[
+  {id:'sport',t:'競技種目を教えてください',o:SPORTS},
+  {id:'position',t:'チームでのポジション・立場は？',o:['レギュラー・スターター','控え・サブメンバー','主将・キャプテン','副将・リーダー格','マネージャー・サポート','1年目・スタートライン']},
+  {id:'years',t:'競技歴は何年ですか？',o:YEARS},
+  {id:'power',t:'競技を通じて最も鍛えられたと思う力は？',o:POWERS},
+  {id:'salary',t:'将来の理想年収はいくらですか？',o:['400万円未満でもOK','400〜500万円','500〜700万円','700〜1000万円','1000万円以上を目指したい']},
+  {id:'style',t:'どんな働き方がしたいですか？',o:['チームで動く仕事がしたい','数字・目標を追う仕事がしたい','人の役に立つ仕事がしたい','専門スキルを活かしたい','フィールドワーク・外回りがしたい','社会に影響を与えたい']},
+  {id:'worry',t:'就活・キャリアで一番不安なことは？',o:['スポーツ以外の自己PRが思いつかない','どんな業界・職種が向いてるかわからない','競技と就活の両立が不安','面接・コミュニケーションが苦手','年収・待遇の相場がわからない','将来のビジョンが描けない']},
+  {id:'free',t:'就職やキャリアについて、自由に教えてください（任意）',free:'例：競技を活かしたスポーツ系の仕事に興味がある。でも一般企業でも挑戦してみたい。コーチやトレーナーも考えているが年収が心配…など、何でも気軽に書いてください。'}
+ ],
+ second:[
+  {id:'sport',t:'現役時の競技種目を教えてください',o:SPORTS},
+  {id:'level',t:'現役時の競技レベルは？',o:['プロ・実業団','大学トップリーグ','インターハイ・国体出場','地区・県大会レベル','部活動・同好会レベル','趣味・レクリエーション']},
+  {id:'years',t:'競技歴は何年ですか？',o:YEARS},
+  {id:'status',t:'現在の状況を教えてください',o:['引退して転職活動中','引退を検討中','すでに働きながら転職も考えている','現役継続しながらセカンドキャリアを考え始めた']},
+  {id:'salary',t:'理想の年収はいくらですか？',o:['400万円未満でもスタートOK','400〜500万円','500〜700万円','700〜1000万円','1000万円以上を目指したい']},
+  {id:'power',t:'競技で最も培ったと思う力は？',o:POWERS},
+  {id:'direction',t:'セカンドキャリアで興味のある方向性は？',o:['スポーツ・競技に関わる仕事','営業・ビジネス職','建設・施工管理など現場系','コーチング・指導者','人材・採用・HR系','まだ決めていない・相談したい']},
+  {id:'free',t:'セカンドキャリアについて、率直に教えてください（任意）',free:'例：競技一筋でスーツを着たことがない。ビジネスマナーに自信がなく不安。でも体力には自信がある。スポーツに関わる仕事をしたいが、給料が心配…など何でも書いてください。'}
+ ]
+};
+const TYPES={
+ leader:{name:'フィールドリーダー型',desc:'チームを動かす生まれながらのリーダー。目標に向かって人を引っ張る力が最大の武器。',str:['統率力・リーダーシップ','目標達成への執念','プレッシャー耐性'],weak:['ビジネスマナー・社会常識','数字・データ分析','書類作成・事務処理'],jobs:[['営業職（法人・新規開拓）','目標を追いかける最前線。競技と同じく結果がすべての世界',5],['施工管理職','現場をまとめ上げるリーダーシップが直接活きる仕事',5],['人材・採用コンサルタント','人を見極める目と巻き込む力が活きるキャリア',4],['スポーツビジネス・マネジメント','競技知識×ビジネスで唯一無二の存在に',4]],risk:['競技一筋だと「つぶしが効かない」と見られるリスクがある','引退後に動き出すと、同世代との年収差が広がる一方','自己分析が曖昧なまま就活すると第一志望に落ちやすい']},
+ supporter:{name:'縁の下サポーター型',desc:'チームを支える力と細やかな気配りが武器。組織になくてはならない存在になれる。',str:['気配り・サポート力','継続力・誠実さ','チームへの貢献意識'],weak:['自己アピール・自己PR','リーダーシップの発揮','交渉・折衝力'],jobs:[['施工管理（書類・段取り）','緻密な段取りと調整力が現場の信頼を生む',5],['ルート営業・カスタマーサクセス','信頼関係を丁寧に積み上げる、長期的な営業スタイル',5],['医療・福祉・介護職','人への献身と体力が直接活きる現場',4],['人事・採用担当','人を大切にする視点がチームづくりに活きる',4]],risk:['控え経験が「受け身」と見られ、評価が低くなることがある','自己PRが苦手なまま就活すると書類選考で落ちやすい','行動が遅れると希望の業界・職種の枠が埋まっていく']},
+ analyst:{name:'戦略アナリスト型',desc:'状況を読み分析する力が武器。頭で勝負するタイプで、データや論理で問題を解決できる。',str:['状況分析・判断力','論理的思考','冷静さ・メンタル安定'],weak:['チームワーク・コミュニケーション','スピード感・即決力','プレゼン・発信力'],jobs:[['施工管理（工程・品質管理）','論理的な工程設計で現場を最適化するプロ',5],['ITエンジニア・システム職','分析力と論理思考が直接コードに活きる',5],['営業企画・マーケター','データで戦略を立てる、頭で勝負の仕事',4],['コンサルタント','課題を分析し解決策を提案するプロフェッショナル',4]],risk:['ポジションが低い競技経験は「強み」として使いづらい','分析型は動き出しが遅くなる傾向があり、チャンスを逃しやすい','同世代のビジネスパーソンはすでにスキルを積んでいる']},
+ challenger:{name:'フロンティアチャレンジャー型',desc:'未知の領域にも果敢に挑戦できる行動力が武器。変化を楽しみ、逆境に強い。',str:['行動力・チャレンジ精神','逆境での粘り強さ','新しい環境への適応力'],weak:['計画性・段取り力','継続的な努力の見える化','書面・数字での表現'],jobs:[['新規開拓営業・ベンチャー営業','ゼロから切り開くフロンティア精神が活きる最前線',5],['スタートアップ・事業企画','変化が激しい環境で真価を発揮できる',5],['施工管理（現場・工事管理）','現場での即断即決が評価される仕事',4],['海外営業・グローバルビジネス','新しい世界への挑戦意欲が活きるフィールド',4]],risk:['チャレンジャー型は計画性がないと評価されることがある','行動先行で自己分析が甘いと、入社後のミスマッチが起きやすい','熱量だけでは面接を突破しにくい時代になっている']}
+};
+
+const $=id=>document.getElementById(id);
+let track=null,idx=0,ans={};
+const qs=()=>Q[track];
+
+document.querySelectorAll('[data-track]').forEach(b=>b.addEventListener('click',()=>{
+  track=b.dataset.track;
+  document.querySelectorAll('[data-track]').forEach(x=>x.setAttribute('aria-pressed',x===b?'true':'false'));
+  $('d-start-err').textContent='';
+}));
+$('d-begin').addEventListener('click',()=>{
+  if(!track){$('d-start-err').textContent='まずタイプを選んでください。';return;}
+  idx=0;ans={};show('q');renderQ();
+});
+function show(w){['start','q','contact','load','res'].forEach(k=>$('d-'+k).classList.toggle('hidden',k!==w));}
+function renderQ(){
+  const q=qs()[idx],n=qs().length;
+  $('d-bar').style.width=((idx)/n*100)+'%';
+  $('d-qnum').textContent='Q'+(idx+1)+' / '+n;
+  $('d-qtitle').textContent=q.t;
+  $('d-err').textContent='';
+  const box=$('d-opts');box.innerHTML='';
+  if(q.free){
+    $('d-free').classList.remove('hidden');box.classList.add('hidden');
+    $('d-text').placeholder=q.free;$('d-text').value=ans[q.id]||'';
+    $('d-next').innerHTML='診断する ✦';
+  }else{
+    $('d-free').classList.add('hidden');box.classList.remove('hidden');
+    q.o.forEach(o=>{
+      const b=document.createElement('button');b.type='button';b.className='opt';b.textContent=o;
+      b.setAttribute('aria-pressed',ans[q.id]===o?'true':'false');
+      b.addEventListener('click',()=>{ans[q.id]=o;[...box.children].forEach(x=>x.setAttribute('aria-pressed',x===b?'true':'false'));setTimeout(next,160);});
+      box.appendChild(b);
+    });
+    $('d-next').innerHTML='次へ →';
+  }
+  $('d-back').textContent=idx===0?'← タイプ選択に戻る':'← 戻る';
+}
+function next(){
+  const q=qs()[idx];
+  if(q.free){ans[q.id]=$('d-text').value.trim();show('contact');$('c-name').focus();return;}
+  if(!ans[q.id]){$('d-err').textContent='選択してください。';return;}
+  idx++;renderQ();
+}
+$('d-next').addEventListener('click',next);
+$('d-back').addEventListener('click',()=>{if(idx===0){show('start');return;}idx--;renderQ();});
+let contact={};
+$('c-back').addEventListener('click',()=>{show('q');renderQ();});
+$('d-contact').addEventListener('submit',ev=>{
+  ev.preventDefault();
+  const name=$('c-name').value.trim(),email=$('c-email').value.trim(),phone=$('c-phone').value.trim(),org=$('c-org').value.trim();
+  if(!name){$('c-err').textContent='お名前を入力してください。';$('c-name').focus();return;}
+  if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){$('c-err').textContent='メールアドレスを正しく入力してください。';$('c-email').focus();return;}
+  if(phone&&!/^[0-9+\-()\s]{8,20}$/.test(phone)){$('c-err').textContent='電話番号は数字とハイフンで入力してください。';$('c-phone').focus();return;}
+  if(!$('c-agree').checked){$('c-err').textContent='同意にチェックを入れてください。';return;}
+  $('c-err').textContent='';
+  contact={name,email,phone,org};
+  finish();
+});
+
+function decideType(a){
+  const p=a.power||'';
+  if(/目標設定|精神力/.test(p))return 'leader';
+  if(/分析/.test(p))return 'analyst';
+  if(/瞬発力|行動力/.test(p))return 'challenger';
+  // チームワーク・コミュニケーション
+  if(/主将|副将/.test(a.position||'')||/プロ|トップリーグ/.test(a.level||''))return 'leader';
+  return 'supporter';
+}
+function score(a){
+  let s=48;
+  s+=({'3年未満':2,'3〜6年':6,'7〜10年':10,'11〜15年':13,'16年以上':15})[a.years]||0;
+  s+=({'主将・キャプテン':16,'副将・リーダー格':13,'レギュラー・スターター':11,'マネージャー・サポート':8,'控え・サブメンバー':6,'1年目・スタートライン':4})[a.position]||0;
+  s+=({'プロ・実業団':20,'大学トップリーグ':16,'インターハイ・国体出場':13,'地区・県大会レベル':9,'部活動・同好会レベル':6,'趣味・レクリエーション':3})[a.level]||0;
+  s+=a.power?6:0;
+  if(a.free&&a.free.length>30)s+=3;
+  return Math.max(40,Math.min(97,s));
+}
+function finish(){
+  show('load');
+  const msgs=['競技データを分析中…','市場価値スコアを算出中…','キャリアタイプを判定中…','あなた専用の診断結果を生成しています ✦'];
+  let i=0;$('d-loadtext').textContent=msgs[0];
+  const t=setInterval(()=>{i++;if(i<msgs.length)$('d-loadtext').textContent=msgs[i];},650);
+  setTimeout(()=>{clearInterval(t);renderResult();},2700);
+}
+function esc(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+function stars(n){return '★'.repeat(n)+'☆'.repeat(5-n);}
+let lastResult=null;
+function renderResult(){
+  const key=decideType(ans),T=TYPES[key],sc=score(ans);
+  lastResult={track:track==='student'?'学生':'セカンドキャリア',type:T.name,score:sc,answers:Object.assign({},ans),at:new Date().toLocaleString('ja-JP',{timeZone:'Asia/Tokyo'})};
+  post('診断完了');
+  const h=[];
+  h.push('<p class="qnum">YOUR CAREER TYPE</p>');
+  h.push('<p class="type">'+esc(T.name)+'</p>');
+  h.push('<p style="color:var(--sub);margin:0">'+esc(T.desc)+'</p>');
+  h.push('<div class="score"><span class="n">'+sc+'</span><span class="u">/ 100　市場価値スコア</span></div>');
+  h.push('<div class="meter"><i style="width:'+sc+'%"></i></div>');
+  h.push('<p class="note">※ 回答をもとにした目安です。経験の言語化と準備しだいで、スコアは大きく伸ばせます。</p>');
+  h.push('<div class="rgrid"><div class="rbox"><h4>武器になる力</h4><ul>'+T.str.map(x=>'<li>'+esc(x)+'</li>').join('')+'</ul></div>');
+  h.push('<div class="rbox"><h4>伸ばしたい力</h4><ul>'+T.weak.map(x=>'<li>'+esc(x)+'</li>').join('')+'</ul></div></div>');
+  h.push('<div class="rbox" style="margin-top:16px"><h4>向いている仕事</h4><div class="jobs">'+T.jobs.map(j=>'<div class="job"><div><b>'+esc(j[0])+'</b><small>'+esc(j[1])+'</small></div><span class="stars" aria-label="適合度'+j[2]+'">'+stars(j[2])+'</span></div>').join('')+'</div></div>');
+  h.push('<div class="rbox" style="margin-top:16px"><h4>知っておきたいリスク</h4><ul>'+T.risk.map(x=>'<li>'+esc(x)+'</li>').join('')+'</ul></div>');
+  h.push('<div class="cta-box"><p style="font-family:var(--serif);font-size:20px;color:var(--text);margin-bottom:8px">この結果を、無料相談のたたき台に。</p>');
+  h.push('<p>結果をLINEで送ると、浅見本人が内容を見て、あなたに合った次の一歩をお返事します。売り込みは一切しません。</p>');
+  h.push('<div class="ctas" style="margin-top:0"><button type="button" class="btn btn-gold" id="d-send">結果をLINEで送って相談する →</button><button type="button" class="btn btn-ghost" id="d-copy">結果をコピー</button></div>');
+  h.push('<p class="err" id="d-send-err" style="color:var(--muted)"></p></div>');
+  h.push('<p style="margin-top:20px"><button type="button" class="linkbtn" id="d-retry">もう一度診断する</button></p>');
+  $('d-res').innerHTML=h.join('');
+  show('res');
+  $('d-res').scrollIntoView({behavior:'smooth',block:'start'});
+  $('d-send').addEventListener('click',sendLine);
+  $('d-copy').addEventListener('click',()=>{navigator.clipboard&&navigator.clipboard.writeText(buildText()).then(()=>{$('d-send-err').textContent='コピーしました。LINEのトークに貼り付けて送ることもできます。';});});
+  $('d-retry').addEventListener('click',()=>{track=null;document.querySelectorAll('[data-track]').forEach(x=>x.setAttribute('aria-pressed','false'));show('start');});
+}
+function buildText(){
+  const r=lastResult,a=r.answers,name=contact.name||'';
+  const label={sport:'競技',position:'立場',level:'競技レベル',years:'競技歴',status:'現在の状況',power:'培った力',salary:'理想年収',style:'働き方',worry:'不安',direction:'興味の方向',free:'自由記述'};
+  const lines=['【キャリア診断結果】'];
+  if(name)lines.push('名前：'+name);
+  if(contact.org)lines.push('所属：'+contact.org);
+  lines.push('区分：'+r.track,'タイプ：'+r.type,'市場価値スコア：'+r.score+'/100','');
+  Object.keys(a).forEach(k=>{if(a[k])lines.push(label[k]+'：'+a[k]);});
+  lines.push('','この結果をもとに相談したいです。');
+  let t=lines.join('\n');
+  if(t.length>1200)t=t.slice(0,1200)+'…';
+  return t;
+}
+function post(event){
+  if(!SHEET_ENDPOINT||!lastResult)return;
+  const body=JSON.stringify(Object.assign({event},contact,lastResult));
+  try{
+    if(navigator.sendBeacon&&event==='LINE送信'){navigator.sendBeacon(SHEET_ENDPOINT,new Blob([body],{type:'text/plain'}));return;}
+    fetch(SHEET_ENDPOINT,{method:'POST',mode:'no-cors',headers:{'Content-Type':'text/plain'},body,keepalive:true}).catch(()=>{});
+  }catch(e){}
+}
+function sendLine(){
+  const text=buildText();
+  post('LINE送信');
+  window.location.href='https://line.me/R/oaMessage/'+encodeURIComponent(LINE_ID)+'/?text='+encodeURIComponent(text);
+}
+</script>
+</body>
+</html>
