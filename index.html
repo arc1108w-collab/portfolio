@@ -5,6 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>浅見亮太郎のスポーツ戦略室｜現役のうちに、自分の価値を設計する。</title>
 <meta name="description" content="現役ラグビー選手×研究者×起業家・浅見亮太郎の公式ページ。アスリートの市場価値がわかる無料キャリア診断、事業紹介、講演・相談のご依頼。">
+<meta property="og:type" content="website">
+<meta property="og:title" content="浅見亮太郎のスポーツ戦略室｜無料アスリートキャリア診断">
+<meta property="og:description" content="現役ラグビー選手×研究者×起業家・浅見亮太郎。3分でわかる、アスリートの市場価値とキャリアタイプ。">
+<meta property="og:image" content="https://arc1108w-collab.github.io/portfolio/img/og.jpg">
+<meta property="og:url" content="https://arc1108w-collab.github.io/portfolio/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="img/icon.png">
+<link rel="apple-touch-icon" href="img/icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@600;700&display=swap">
@@ -137,6 +145,21 @@ blockquote p{margin:0;font-family:var(--serif);font-weight:600;font-size:clamp(1
 footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:24px;padding-top:48px;padding-bottom:48px}
 footer nav{display:flex;flex-wrap:wrap;gap:8px 24px;font-size:14px}
 .hidden{display:none !important}
+.chips{list-style:none;padding:0;margin:24px 0 0;display:flex;flex-wrap:wrap;gap:8px}
+.chips li{font-size:13px;color:var(--sub);border:1px solid var(--line);border-radius:999px;padding:4px 14px}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;max-width:860px;margin:0 auto 32px}
+.steps div{border:1px solid var(--line);padding:18px 20px;background:rgba(19,32,50,.6)}
+.steps b{display:block;color:var(--gold);font-family:var(--serif);font-size:15px;margin-bottom:4px}
+.steps span{color:var(--sub);font-size:14px}
+.faq{max-width:860px}
+.faq details{border-bottom:1px solid #E4DCCB;padding:18px 0}
+.faq summary{cursor:pointer;font-weight:700;font-size:16px;list-style:none;display:flex;justify-content:space-between;gap:16px;min-height:44px;align-items:center}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary:after{content:"+";color:var(--goldDark);font-size:22px;font-weight:400}
+.faq details[open] summary:after{content:"−"}
+.faq p{margin:8px 0 0;color:var(--ink2)}
+.privacy{max-width:860px;color:var(--muted);font-size:13px}
+.privacy summary{cursor:pointer;color:var(--sub);min-height:44px;display:flex;align-items:center}
 section[id],#d-res{scroll-margin-top:90px}
 </style>
 </head>
@@ -169,6 +192,7 @@ section[id],#d-res{scroll-margin-top:90px}
 <a class="btn btn-gold" href="#diagnosis">無料キャリア診断をはじめる <span aria-hidden="true">→</span></a>
 <a class="btn btn-ghost" href="https://line.me/R/ti/p/@054tfofs">LINEで最新記事を受け取る</a>
 </div>
+<ul class="chips" aria-label="無料キャリア診断の特長"><li>完全無料</li><li>所要3分</li><li>スマホで完結</li><li>売り込みなし</li></ul>
 </div>
 <div class="side"><div class="photo-frame"><img src="img/hero.jpg" alt="夜の階段を降りる浅見亮太郎"></div></div>
 </div>
@@ -192,6 +216,11 @@ section[id],#d-res{scroll-margin-top:90px}
 <p class="lead" style="margin:0 auto">アスリートの市場価値を可視化する無料診断。所要3分、スマホで完結。あなたのキャリアタイプと、向いている仕事がわかります。</p>
 </div>
 
+<div class="steps">
+<div><b>STEP 1　質問に答える</b><span>競技歴や立場など、8つの質問にタップで回答。</span></div>
+<div><b>STEP 2　結果を見る</b><span>キャリアタイプ・市場価値スコア・向いている仕事がその場でわかります。</span></div>
+<div><b>STEP 3　無料で相談</b><span>結果をLINEで送れば、浅見本人が次の一歩をお返事します。</span></div>
+</div>
 <div class="dcard" aria-live="polite">
 <!-- start -->
 <div id="d-start">
@@ -382,7 +411,22 @@ section[id],#d-res{scroll-margin-top:90px}
 </div>
 </section>
 
-<section class="light">
+<section class="light" id="faq">
+<div class="wrap sec">
+<p class="eyebrow">FAQ</p>
+<h2>よくあるご質問</h2>
+<div class="faq">
+<details><summary>キャリア診断は本当に無料ですか？</summary><p>はい、完全無料です。診断後に費用を請求したり、しつこい営業をしたりすることはありません。</p></details>
+<details><summary>入力した連絡先は何に使われますか？</summary><p>診断結果をもとにしたご連絡と、サービス改善のためにのみ使います。第三者に提供することはありません。ご連絡が不要な場合は、その旨お知らせください。</p></details>
+<details><summary>現役の学生でも、引退した選手でも使えますか？</summary><p>使えます。最初に「体育学生・現役学生」か「セカンドキャリア」を選ぶと、それぞれに合った質問に切り替わります。</p></details>
+<details><summary>診断のあと、どう相談すればいいですか？</summary><p>結果画面の「結果をLINEで送って相談する」を押すと、回答内容が公式LINEに届きます。浅見本人が内容を見て、次の一歩をお返事します。</p></details>
+<details><summary>チームや部活単位での相談もできますか？</summary><p>できます。ATHLETE BRIDGEでは、選手のキャリア支援とチームへの物資還元をセットで行っています。監督・コーチの方は「監督・コーチの方はこちら」からご連絡ください。</p></details>
+<details><summary>講演や取材の依頼はどこからできますか？</summary><p>公式LINEで「依頼」と送るか、メール（a.r.c.1108w@gmail.com）でご連絡ください。</p></details>
+</div>
+</div>
+</section>
+
+<section class="light" style="border-top:1px solid #E4DCCB">
 <div class="wrap sec" style="text-align:center;max-width:880px">
 <p class="eyebrow">LINE OFFICIAL</p>
 <h2>浅見亮太郎のスポーツ戦略室</h2>
@@ -404,6 +448,11 @@ section[id],#d-res{scroll-margin-top:90px}
 <a href="https://www.facebook.com/profile.php?id=61566730471526">Facebook</a>
 <a href="https://line.me/R/ti/p/@054tfofs">LINE</a>
 </nav>
+</div>
+<div class="wrap" style="padding-bottom:40px">
+<details class="privacy"><summary>個人情報の取り扱いについて</summary>
+<p>合同会社A.R.C.（以下「当社」）は、本ページのキャリア診断およびお問い合わせで取得したお名前・連絡先・回答内容を、①ご相談への回答・ご連絡、②サービスの改善のためにのみ利用します。法令に基づく場合を除き、ご本人の同意なく第三者に提供することはありません。情報の開示・訂正・削除のご希望は、a.r.c.1108w@gmail.com までご連絡ください。</p>
+</details>
 </div>
 </footer>
 
